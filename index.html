@@ -2,61 +2,180 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
-    <!-- ESSENCIAL PARA MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Versículo Tenda Mar (QRCode)</title>
+    <meta name="description" content="Tenda Mar — tendas leves e criativas para seus melhores momentos ao sol.">
+    <title>TendaMar</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="luxury-header">
+        <div class="luxury-header-content">
+            <a href="#tutorial" class="luxury-btn">TUTORIAL</a>
+            <a href="#hero" class="logo-link">
+                <img src="assets/img/logo.png" alt="Logo Tenda Mar" class="luxury-logo">
+            </a>
+            <a href="#footer" class="luxury-btn">CONTATO</a>
+        </div>
+    </header>
 
-    <!-- BANNER -->
-    <div class="banner">
-        <img src="img/bannerMar.png" class="banner-img" alt="Banner do mar">
-    </div>
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline disablePictureInPicture controlslist="nodownload noplaybackrate">
+            <source src="assets/video/bc_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <h1 class="hero-title reveal-line">TENDA MAR</h1>
+        <article class="caixa-mensagem" id="mensagem-card">
+            <p class="subtitle reveal-line">
+                Em meio à correria da vida, todos precisamos parar um pouco.
+                Que este espaço seja um refúgio de paz, leveza e renovação.
+            </p>
+            <blockquote class="mensagem reveal-line">
+                "Vinde a mim todos os que estão cansados e sobrecarregados, e eu vos aliviarei."
+            </blockquote>
+            <cite class="versiculo reveal-line"><a href="https://www.bibliaon.com/versiculo/mateus_11_28/" target="_blank" rel="noopener noreferrer" class="versiculo-link">Mateus 11:28</a></cite>
+        </article>
+        <div class="hero-waves-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 255, 255, 0.4)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(126, 200, 227, 0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(79, 209, 197, 0.2)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--bg)" />
+                </g>
+            </svg>
+        </div>
+    </section>
 
-    <!-- CONTEÚDO -->
-    <div class="container">
-        <div class="caixaMensagem fade-in">
-            <div class="subtitle">Em meio à correria da vida, todos precisamos parar um pouco.
-Que este espaço seja um refúgio de paz, leveza e renovação.</div>
+    <section id="tutorial" class="tutorial-section">
+        <div class="section-header reveal-on-scroll">
+            <h2 class="section-title">TUTORIAL</h2>
+            <p class="section-subtitle">Aprenda a montar sua TendaMar em poucos minutos e aproveite o sol com estilo.</p>
+        </div>
 
-            <div class="mensagem">
-                “Vinde a mim todos os que estão cansados e sobrecarregados, e eu vos aliviarei.”
-            </div>
+        <div class="tutorial-single-column">
+            <div class="tutorial-steps-container">
+                <div class="step-card reveal-on-scroll stagger-1" data-step="1">
+                    <div class="step-icon-wrapper">
+                        <div class="step-number-glass">1</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="6" width="16" height="12" rx="1" />
+                            <circle cx="4" cy="6" r="1.5" fill="currentColor" />
+                            <circle cx="20" cy="6" r="1.5" fill="currentColor" />
+                            <circle cx="4" cy="18" r="1.5" fill="currentColor" />
+                            <circle cx="20" cy="18" r="1.5" fill="currentColor" />
+                            <path d="M4 6l16 12M20 6L4 18" stroke-opacity="0.2" />
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h4>Preparação da Base</h4>
+                        <p>Escolha um local plano e estenda a lona sobre a areia de forma uniforme.</p>
+                    </div>
+                </div>
 
-            <div class="versiculo">
-                Mateus 11:28
+                <div class="step-card reveal-on-scroll stagger-2" data-step="2">
+                    <div class="step-icon-wrapper">
+                        <div class="step-number-glass">2</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 21h8a2 2 0 0 0 2-2v-9a4 4 0 0 0-4-4h-4a4 4 0 0 0-4 4v9a2 2 0 0 0 2 2z" />
+                            <path d="M12 2v3M9 10v.01M15 10v.01M12 13v.01" stroke-width="2" />
+                            <path d="M8 21c0-2 8-2 8 0" />
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h4>Âncoras de Areia</h4>
+                        <p>Preencha os sacos de âncora com areia até o limite máximo para garantir estabilidade.</p>
+                    </div>
+                </div>
+
+                <div class="step-card reveal-on-scroll stagger-3" data-step="3">
+                    <div class="step-icon-wrapper">
+                        <div class="step-number-glass">3</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 20c5-2 15-2 20 0" stroke-width="2" />
+                            <path d="M7 20V8M17 20V8" />
+                            <path d="M7 8c2-2 8-2 10 0" stroke-opacity="0.5" />
+                            <path d="M2 20l5-12M22 20l-5-12" stroke-opacity="0.3" />
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h4>Elevação Final</h4>
+                        <p>Estique a lona em "X", encaixe os mastros frontais e sinta a brisa sob sua nova sombra.</p>
+                    </div>
+                </div>
+
+                <div class="cta-container reveal-on-scroll stagger-4">
+                    <p class="cta-text">Alguma dúvida?</p>
+                    <a href="https://www.tiktok.com/@tendamar/video/7618362793275755783" target="_blank" rel="noopener noreferrer" class="luxury-btn tiktok-cta">
+                        <svg class="tiktok-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.33-.85.51-1.44 1.43-1.58 2.41-.16 1.02.13 2.11.83 2.9.72.84 1.83 1.3 2.92 1.25 1.17-.05 2.32-.71 2.89-1.74.37-.62.58-1.33.58-2.05V0z" />
+                        </svg>
+                        Veja nosso vídeo no TikTok!
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="footer-container">
-            
-            <!-- ESQUERDA -->
-            <div class="footer-left">
-                <h2 class="logo">TENDA MAR</h2>
-                <p>
-                    Somos uma marca criativa e apaixonada pelo verão, que desenvolve tendas leves,
-                    fáceis de montar e feitas para acompanhar você em cada momento ao sol.
-                </p>
+            <div class="footer-brand">
+                <div class="footer-logo-container">
+                    <img src="assets/img/logo.png" alt="Logo Tenda Mar" class="footer-logo">
+                    <h2 class="footer-title">TENDA MAR</h2>
+                </div>
+                <p>Somos uma marca criativa e apaixonada pelo verão, desenvolvendo tendas leves e fáceis de montar.</p>
             </div>
 
-            <!-- CENTRO -->
-            <div class="footer-center">
+            <div class="footer-contact">
                 <h3>CONTATO</h3>
-                <p>tendasmar@gmail.com</p>
-                <p><a href="https://www.instagram.com/_tendamar" target="_blank" class="arroba">@_tendamar</a></p>
+                <div class="contact-links">
+                    <a href="mailto:tendasmar@gmail.com" class="footer-link">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        tendasmar@gmail.com
+                    </a>
+                    <a href="https://www.instagram.com/_tendamar" target="_blank" rel="noopener noreferrer" class="footer-link">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        @_tendamar
+                    </a>
+                    <a href="https://www.tiktok.com/@tendamar" target="_blank" rel="noopener noreferrer" class="footer-link">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                        </svg>
+                        @tendamar
+                    </a>
+                    <a href="https://wa.me/5511975460737" target="_blank" rel="noopener noreferrer" class="footer-link">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        (11) 97546-0737
+                    </a>
+                </div>
             </div>
-
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 TendaMar — Sua melhor sombra para os dias de sol.</p>
+                <p class="credits">Desenvolvido por <a href="https://www.instagram.com/greroskix" target="_blank" rel="noopener noreferrer">@greroskix</a></p>
+            </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
-
 </body>
 </html>
